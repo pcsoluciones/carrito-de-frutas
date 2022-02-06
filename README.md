@@ -1,5 +1,7 @@
 # Archivo para documentar en github
-# Ejemplo carrito de frutas con objeto y template
+# Ejemplo carrito de frutas con objeto y template app-con-objetos
+# Ejemplo modificado para usar con arrays         app-con-array
+
 
 ## template
 ```html
