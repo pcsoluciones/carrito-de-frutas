@@ -14,7 +14,9 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Frutilla 🍓</h5>
-                        <button class="btn btn-outline-primary" data-fruta="Frutilla 🍓">
+                        <p class="lead">$300</p>
+                        <button class="btn btn-outline-primary" 
+                            data-fruta="Frutilla 🍓" data-precio="300">
                             Agregar
                         </button>
                     </div>
@@ -24,7 +26,9 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Platano 🍌</h5>
-                        <button class="btn btn-outline-primary" data-fruta="Platano 🍌">
+                        <p class="lead">$100</p>
+                        <button class="btn btn-outline-primary" 
+                            data-fruta="Platano 🍌" data-precio="100"> 
                             Agregar
                         </button>
                     </div>
@@ -34,7 +38,9 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Manzana 🍏</h5>
-                        <button class="btn btn-outline-primary" data-fruta="Manzana 🍏">
+                        <p class="lead">$200</p>
+                        <button class="btn btn-outline-primary" 
+                            data-fruta="Manzana 🍏" data-precio="200">
                             Agregar
                         </button>
                     </div>
@@ -43,22 +49,46 @@
         </div>
     </main>          
 
-      <section class="container mt-3">
-          <ul class="list-group" id="carrito">
-          </ul>
-      </section>
+    <section class="container mt-3">
+        <ul class="list-group" id="carrito">
+        </ul>
+    </section>
 
-      <template id="template">
-        <li class="list-group-item d-flex justify-content-between align-items-center ">
-            <span class="lead">Frutilla</span>
-            <span class="badge bg-primary rounded-pill">12</span>
+    <footer id="footer" class="container mt-3">
+    </footer>
+
+
+    <template id="template">
+        <li class="list-group-item bg-secondary text-white">
+            <span class="badge bg-primary rounded-pill align-middle"></span>
+            <span class="lead align-middle"></span>
         </li>
-      </template>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+                <p class="lead mb-0">Total: $<span>300</span></p>
+            </div>
+            <div>
+                <button class="btn btn-sm btn-danger">Quitar</button>
+                <button class="btn btn-sm btn-success">Agregar</button>
+            </div>
+        </li>
+    </template>
+
+    <template id="templateFooter">
+        <div class="card">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div class="lead mb-0">Suma Total $ <span>1500</span></div>
+                <button class="btn btn-outline-primary">
+                    Finalizar compra
+                </button>
+            </div>
+        </div>
+    </template>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--  <script src="app-con-objetos.js"></script>  -->
-    <script src="app-con-array.js"></script>
+    <script src="app3.js"></script>
 
 </body>
 </html>
